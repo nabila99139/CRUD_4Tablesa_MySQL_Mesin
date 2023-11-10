@@ -9,6 +9,6 @@
         <p>
             <b>Lokasi</b> {{ $data->lokasi_mesin }}
         </p>
-        <a class="btn btn-secondary" href="/">Kembali ke Daftar</a>
+        <a class="btn btn-secondary" href="/semua_table">Kembali ke Daftar</a>
     </div>
 @endsection
