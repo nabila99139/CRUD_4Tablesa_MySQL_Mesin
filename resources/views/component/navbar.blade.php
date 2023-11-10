@@ -21,9 +21,6 @@
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="mutasi_mesin">Mutasi Mesin</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="sesi/logout">Logout</a>
-            </li>
         </ul>
         </div>
     </div>

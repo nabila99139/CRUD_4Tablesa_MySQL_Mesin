@@ -33,7 +33,12 @@ class SessionController extends Controller
         ];
 
         if (Auth::attempt($infoLogin)) {
-            return redirect('semua_table')->with('success', Auth::user()->name . ' Berhasil login');
+            if(Auth::user()->role == 'admin'){
+                return redirect('semua_table');
+            }elseif(Auth::user()->role == 'super admin'){
+                return redirect('jenis_mesin');
+            }
+            // return redirect('semua_table')->with('success', Auth::user()->name . ' Berhasil login');
         } else {
             // return 'gagal';
             return redirect('/')->withErrors('Username atau Password salah');

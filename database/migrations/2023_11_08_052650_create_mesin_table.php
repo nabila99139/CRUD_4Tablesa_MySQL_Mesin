@@ -20,7 +20,7 @@ return new class extends Migration
             $table->unsignedBigInteger('merk_mesin_id');
             $table->unsignedBigInteger('mutasi_mesin_id');
 
-            $table->enum('status_mesin', ['mesin_baru', 'mesin_dipakai', 'mesin_rusak', 'mesin_dijual']);
+            $table->enum('status_mesin', ['mesin baru', 'mesin dipakai', 'mesin rusak', 'mesin dijual']);
             $table->string('lokasi_mesin');
             $table->timestamp('tanggal_pencatatan');
             

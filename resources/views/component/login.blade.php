@@ -20,7 +20,7 @@
                         <a class="nav-link active " aria-current="page" href="/">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/register">Register</a>
+                        <a class="nav-link active" aria-current="page" href="sesi/register">Register</a>
                     </li>
                 </ul>
                 </div>
