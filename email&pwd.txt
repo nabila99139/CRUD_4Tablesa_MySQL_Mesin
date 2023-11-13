@@ -1,0 +1,9 @@
+* Admin *
+Email : admin@gmail.com
+pwd : 123456
+
+* Super Admin *
+Email : superadmin@gmail.com
+pwd : 123456
+
+
