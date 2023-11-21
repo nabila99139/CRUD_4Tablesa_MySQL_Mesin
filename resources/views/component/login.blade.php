@@ -19,9 +19,9 @@
                     <li class="nav-item">
                         <a class="nav-link active " aria-current="page" href="/">Login</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="sesi/register">Register</a>
-                    </li>
+                    </li> --}}
                 </ul>
                 </div>
             </div>

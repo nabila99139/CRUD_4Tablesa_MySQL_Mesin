@@ -59,6 +59,15 @@
                     <label for="password" class="form-label">Password</label>
                     <input type="password" name="password" class="form-control">
                 </div>
+                <div class="mb-3">
+                    <label for="role" class="form-label">Roles</label>
+                    <select class="form-select" id="role" name="role">
+                        <option value="" selected disabled>Pilih Roles Anda</option>
+                        @foreach(['admin', 'super_admin'] as $role)
+                            <option value="{{ $role }}" @if(old('role') == $role) selected @endif>{{ $role }}</option>
+                        @endforeach
+                    </select>
+                </div>
                 <div class="mb-3 d-grid">
                     <button name="submit" type="submit" class="btn btn-primary">Register</button>
                 </div>

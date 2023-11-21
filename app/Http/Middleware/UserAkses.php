@@ -14,11 +14,13 @@ class UserAkses
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle(Request $request, Closure $next, $role)
+    public function handle(Request $request, Closure $next, ...$roles)
     {
-        if(auth()->user()->role == $role){
+        if (in_array(auth()->user()->role, $roles)) {
             return $next($request);
         }
-        return response()->json(['Anda tidak diperbolehkan akses halaman ini']);
+        // Jika user role nya tidak sesuai
+        return view('semua_table');
+        // return response()->json(['Anda tidak diperbolehkan akses halaman ini']);
     }
 }
