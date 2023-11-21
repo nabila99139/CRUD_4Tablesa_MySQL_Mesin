@@ -4,14 +4,23 @@
 
 <h1>Daftar Semua Tabel</h1>
 
+<div class="row g-3 align-items-center mt-3 mb-3">
+    <div class="col-auto">
+        <form action="/semua_table" method="GET">
+            <input class="form-control me-2" name="search" type="search" placeholder="Pencarian" aria-label="Search">
+        </form>
+    </div>
+</div>
+
+
 <table class="table">
     <thead>
         <tr>
             <th>barcode id</th>
             <th>Status Mesin</th>
             <th>Lokasi Mesin</th>
-            <th>Tanggal Pencatatan</th>
-            <th>Nama Jenis Mesin</th>
+            <th>Tama Jenis Mesin</th>
+            <th>Nanggal Pencatatan</th>
             <th>Nama Merk Mesin</th>
             <th>Lokasi Asal</th>
             <th>Lokasi Tujuan</th>

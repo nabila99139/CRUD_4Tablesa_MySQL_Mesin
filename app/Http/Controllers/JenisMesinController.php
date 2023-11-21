@@ -32,18 +32,18 @@ class JenisMesinController extends Controller
         $request->validate([
             'idJenis' => 'required|numeric',
             'nama_jenis_mesin' => 'required',
-            'total_mesin' => 'required|numeric'
+            // 'total_mesin' => 'required|numeric'
         ], [
             'idJenis.numeric' => 'Id wajib diisi dengan angka',
             'idJenis.required' => 'Id wajib diisi',
             'nama_jenis_mesin.required' => 'Nama Jenis Mesin wajib diisi',
-            'total_mesin.numeric' => 'Total Mesin wajib diisi dengan angka',
-            'total_mesin.required' => 'Total Mesin wajib diisi'
+            // 'total_mesin.numeric' => 'Total Mesin wajib diisi dengan angka',
+            // 'total_mesin.required' => 'Total Mesin wajib diisi'
         ]);
         $data = [
             'id' => $request->input('idJenis'),
             'nama_jenis_mesin' => $request->input('nama_jenis_mesin'),
-            'total_mesin' => $request->input('total_mesin')
+            // 'total_mesin' => $request->input('total_mesin')
         ];
         JenisMesin::create($data);
         return redirect('jenis_mesin')->with('success', 'Data berhasil dimasukkan');
@@ -69,15 +69,15 @@ class JenisMesinController extends Controller
     {
         $request->validate([
             'nama_jenis_mesin' => 'required',
-            'total_mesin' => 'required|numeric'
+            // 'total_mesin' => 'required|numeric'
         ], [
             'nama_jenis_mesin.required' => 'Nama Jenis Mesin wajib diisi',
-            'total_mesin.numeric' => 'Total Mesin wajib diisi dengan angka',
-            'total_mesin.required' => 'Total Mesin wajib diisi'
+            // 'total_mesin.numeric' => 'Total Mesin wajib diisi dengan angka',
+            // 'total_mesin.required' => 'Total Mesin wajib diisi'
         ]);
         $data = [
             'nama_jenis_mesin' => $request->input('nama_jenis_mesin'),
-            'total_mesin' => $request->input('total_mesin')
+            // 'total_mesin' => $request->input('total_mesin')
         ];
         JenisMesin::where('id', $id)->update($data);
         return redirect('jenis_mesin')->with('success', 'Berhasil update data');

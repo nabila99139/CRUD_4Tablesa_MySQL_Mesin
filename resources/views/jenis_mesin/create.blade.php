@@ -12,10 +12,10 @@
             <label for="nama_jenis_mesin" class="form-label">Nama Jenis Mesin</label>
             <input type="text" class="form-control"  id="nama_jenis_mesin" name="nama_jenis_mesin" value="{{ Session::get('nama_jenis_mesin') }}">
         </div>
-        <div class="mb-3">
+        {{-- <div class="mb-3">
             <label for="total_mesin" class="form-label">Total Mesin</label>
             <input type="text" class="form-control" id="total_mesin" name="total_mesin" value="{{ Session::get('total_mesin')}}">
-        </div>
+        </div> --}}
         <button type="submit" class="btn btn-primary">Simpan</button>
     </form>
 

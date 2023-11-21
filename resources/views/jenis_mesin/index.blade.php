@@ -11,6 +11,7 @@
         <tr>
             <th>Id</th>
             <th>Nama Jenis Mesin</th>
+            <th>Total Mesin</th>
             <th>Aksi</th>
         </tr>
         <tbody>
@@ -18,6 +19,7 @@
             <tr>
                 <td>{{ $item->id }}</td>
                 <td>{{ $item->nama_jenis_mesin }}</td>
+                <td>{{ $item->total_mesin }}</td>
                 <td>
                     <a class="btn btn-secondary btn-sm" href="{{ url('/jenis_mesin/'.$item->id) }}">Lihat Detail</a>
                     <a class="btn btn-warning btn-sm" href="{{ url('/jenis_mesin/'.$item->id.'/edit') }}">Edit</a>

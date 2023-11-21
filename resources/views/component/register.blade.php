@@ -9,7 +9,10 @@
     <title>Login</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+
+    @include('component.navbar')
+
+    {{-- <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,7 +29,7 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </nav> --}}
 
     <div class="container py-5">
         @if ($errors->any())
