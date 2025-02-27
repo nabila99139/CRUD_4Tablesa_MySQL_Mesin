@@ -12,7 +12,7 @@
             <th>Status Mesin</th>
             <th>Lokasi Mesin</th>
             <th>Tanggal Pencatatan</th>
-            <th>Aksi</th>
+            <th>Aksi test</th>
         </tr>
         <tbody>
             @foreach($data as $item)
